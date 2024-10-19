@@ -1,7 +1,7 @@
-package net.javaguides.Bhuvi.mapper;
+package com.sbd.bhuvi.mapper;
 
-import net.javaguides.Bhuvi.dto.UserDto;
-import net.javaguides.Bhuvi.model.User;
+import com.sbd.bhuvi.dto.UserDto;
+import com.sbd.bhuvi.model.User;
 
 public class UserMapper {
 

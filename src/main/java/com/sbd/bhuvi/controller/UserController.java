@@ -1,7 +1,7 @@
-package net.javaguides.Bhuvi.controller;
+package com.sbd.bhuvi.controller;
 
-import net.javaguides.Bhuvi.dto.UserDto;
-import net.javaguides.Bhuvi.service.UserService;
+import com.sbd.bhuvi.dto.UserDto;
+import com.sbd.bhuvi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

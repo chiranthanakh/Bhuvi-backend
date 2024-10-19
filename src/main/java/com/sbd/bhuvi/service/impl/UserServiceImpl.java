@@ -1,12 +1,13 @@
-package net.javaguides.Bhuvi.service.impl;
+package com.sbd.bhuvi.service.impl;
 
+import com.sbd.bhuvi.dto.UserDto;
+import com.sbd.bhuvi.exception.ResourceNotFoundException;
 import lombok.AllArgsConstructor;
-import net.javaguides.Bhuvi.dto.UserDto;
-import net.javaguides.Bhuvi.exception.ResourceNotFoundException;
-import net.javaguides.Bhuvi.mapper.UserMapper;
-import net.javaguides.Bhuvi.model.User;
-import net.javaguides.Bhuvi.repository.UserRepository;
-import net.javaguides.Bhuvi.service.UserService;
+import com.sbd.bhuvi.mapper.UserMapper;
+import com.sbd.bhuvi.model.User;
+import com.sbd.bhuvi.repository.UserRepository;
+import com.sbd.bhuvi.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,7 +17,8 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class UserServiceImpl implements UserService {
 
-    private final UserRepository userRepository;
+    @Autowired
+    private UserRepository userRepository;
 
 
 
@@ -49,10 +51,10 @@ public class UserServiceImpl implements UserService {
                 () -> new ResourceNotFoundException("User does not exist with given id: " + userId)
         );
 
-        user.setName(updatedEmployee.getName());
-        user.setContactNumber(updatedEmployee.getContactNumber());
-        user.setEmailId(updatedEmployee.getEmailId());
-        user.setOwner(updatedEmployee.getOwner());
+//        user.setName(updatedEmployee.getName());
+//        user.setContactNumber(updatedEmployee.getContactNumber());
+//        user.setEmailId(updatedEmployee.getEmailId());
+//        user.setOwner(updatedEmployee.getOwner());
 
         User updatedUserObj = userRepository.save(user);
         return UserMapper.mapToUserDto(updatedUserObj);

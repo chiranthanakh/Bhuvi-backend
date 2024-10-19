@@ -1,6 +1,6 @@
-package net.javaguides.Bhuvi.service;
+package com.sbd.bhuvi.service;
 
-import net.javaguides.Bhuvi.dto.UserDto;
+import com.sbd.bhuvi.dto.UserDto;
 
 import java.util.List;
 

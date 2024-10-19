@@ -1,4 +1,4 @@
-package net.javaguides.Bhuvi.exception;
+package com.sbd.bhuvi.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

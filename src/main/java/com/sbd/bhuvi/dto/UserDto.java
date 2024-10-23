@@ -11,4 +11,27 @@ public class UserDto {
     private String contactNumber;
     private String emailId;
     private String owner;
+
+    public UserDto(long id, String name, String contactNumber, String emailId, String owner) {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getContactNumber() {
+        return contactNumber;
+    }
+
+    public String getEmailId() {
+        return emailId;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
 }

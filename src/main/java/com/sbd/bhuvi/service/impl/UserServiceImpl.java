@@ -4,7 +4,7 @@ import com.sbd.bhuvi.dto.UserDto;
 import com.sbd.bhuvi.exception.ResourceNotFoundException;
 import lombok.AllArgsConstructor;
 import com.sbd.bhuvi.mapper.UserMapper;
-import com.sbd.bhuvi.model.User;
+import com.sbd.bhuvi.entity.User;
 import com.sbd.bhuvi.repository.UserRepository;
 import com.sbd.bhuvi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

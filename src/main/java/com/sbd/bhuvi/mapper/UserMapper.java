@@ -1,7 +1,7 @@
 package com.sbd.bhuvi.mapper;
 
 import com.sbd.bhuvi.dto.UserDto;
-import com.sbd.bhuvi.model.User;
+import com.sbd.bhuvi.entity.User;
 
 public class UserMapper {
 

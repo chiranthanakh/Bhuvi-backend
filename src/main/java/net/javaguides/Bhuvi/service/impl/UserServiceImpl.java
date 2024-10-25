@@ -27,6 +27,7 @@ public class UserServiceImpl implements UserService {
         return UserMapper.mapToUserDto(savedUser);
     }
 
+    //fetch get userId
     @Override
     public UserDto getUserById(Long userId) {
         User user = userRepository.findById(userId)

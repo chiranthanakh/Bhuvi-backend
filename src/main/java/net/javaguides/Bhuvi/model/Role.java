@@ -21,10 +21,10 @@ public class Role {
     private Long id;
 
     @Column(name = "role_name" ,nullable = false)
-    private String roleName;
+    private String roleName; //String
 
     @Column(name = "created_by")
-    private String createdBy;
+    private String createdBy; //String
 
     @Column(name = "created_date",nullable = false,updatable = false)
     private String createdDate;

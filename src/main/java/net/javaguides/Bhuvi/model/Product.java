@@ -5,4 +5,5 @@ public class Product {
     private long pid;
     private String status;
     private String category;
+    private String property_name;
 }
